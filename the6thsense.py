@@ -17,7 +17,7 @@ import time
 #init
 
 # OpenAI API Key
-api_key = "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"
+api_key = "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"
 
 cv2.namedWindow("test")
 
@@ -227,6 +227,7 @@ def main():
         if not ret:
             print("failed to grab frame")
             break
+        cv2.imshow("test", img)
 
         k = cv2.waitKey(1)
         if k%256 == 27:
